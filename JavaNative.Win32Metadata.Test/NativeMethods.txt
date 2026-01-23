@@ -1,0 +1,6 @@
+﻿JavaVMInitArgs
+JNIEnv
+
+GetProcAddress
+JNI_CreateJavaVM
+LoadLibrary

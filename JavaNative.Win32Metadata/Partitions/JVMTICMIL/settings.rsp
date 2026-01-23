@@ -1,0 +1,4 @@
+--traverse
+<IncludeRoot>/jvmticmlr.h
+--namespace
+Java.Runtime.Tool.CompiledMethodLoad

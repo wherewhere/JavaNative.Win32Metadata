@@ -1,0 +1,4 @@
+--traverse
+<IncludeRoot>/jdwpTransport.h
+--namespace
+Java.Diagnostics

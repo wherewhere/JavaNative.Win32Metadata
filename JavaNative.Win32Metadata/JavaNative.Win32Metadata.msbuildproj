@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.Windows.WinmdGenerator/0.69.7-preview">
+  <PropertyGroup>
+    <GenerateAssemblyVersionInfo>false</GenerateAssemblyVersionInfo>
+    <NoWarn>$(NoWarn);NU5100;NU5104</NoWarn>
+    <OutputWinmd>bin\JavaNative.winmd</OutputWinmd>
+    <TargetFramework>net8.0</TargetFramework>
+    <WinmdVersion>4.0.1</WinmdVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <SdkIncRoot>$(JAVA_HOME)\include</SdkIncRoot>
+    <AdditionalIncludes>$(JAVA_HOME)\include\win32</AdditionalIncludes>
+    <ShowEmitWinmdOutputDetails>true</ShowEmitWinmdOutputDetails>
+    <ExcludeFromCrossarch>Constants;JAWT;JDWPTransport;JNI;JVMTI;JVMTICMIL</ExcludeFromCrossarch>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ManualCs Include="Manual\*.cs" />
+    <ImportLibs Include="$(JAVA_HOME)\lib\*.lib">
+      <StaticLibs>%(Filename)=%(Filename)</StaticLibs>
+    </ImportLibs>
+    <PartitionFiles Include="Partitions\**\main.cpp" />
+    <Partition Include="@(PartitionFiles)">
+      <Name>$([System.IO.Path]::GetFileName($([System.IO.Path]::GetDirectoryName($([System.String]::Copy('%(Directory)'))))))</Name>
+    </Partition>
+    <ResponseFile Include="Partitions\**\settings.rsp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="@(Partition)" />
+    <None Include="@(ResponseFile)" />
+    <None Include="@(ManualCs)" />
+    <None Include="**/*.txt" Exclude="bin/**/*;obj/**/*" />
+    <None Include="**/*.json" Exclude="bin/**/*;obj/**/*" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+--remap
+jdwpTransportNativeInterface_=jdwpTransportNativeInterface
+_jdwpTransportEnv=jdwpTransportEnv
+
+JavaVM_=JavaVM
+JNIEnv_=JNIEnv
+JNIInvokeInterface_=JNIInvokeInterface
+JNINativeInterface_=JNINativeInterface
+jvalue=JValue
+_jclass=JClass
+_jfieldID=JFieldID
+_jmethodID=JMethodID
+_jobject=JObject
+_jobjectType=JObjectType
+
+_jvmtiEnv = jvmtiEnv

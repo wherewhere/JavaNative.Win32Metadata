@@ -1,0 +1,4 @@
+--traverse
+<IncludeRoot>/jawt.h
+--namespace
+Java.Window

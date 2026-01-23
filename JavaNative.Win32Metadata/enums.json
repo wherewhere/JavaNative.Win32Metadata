@@ -1,0 +1,64 @@
+{
+  "$schema": "https://github.com/microsoft/win32metadata/raw/main/generation/WinSDK/enums.schema.json",
+  "items": [
+    {
+      "namespace": "Java.Runtime.Native",
+      "name": "JNI_ERROR",
+      "autoPopulate": {
+        "filter": "JNI_OK|JNI_E",
+        "header": "jni.h"
+      },
+      "uses": [
+        {
+          "method": "JNI_GetDefaultJavaVMInitArgs",
+          "parameter": "return"
+        },
+        {
+          "method": "JNI_CreateJavaVM",
+          "parameter": "return"
+        },
+        {
+          "method": "JNI_GetCreatedJavaVMs",
+          "parameter": "return"
+        }
+      ]
+    },
+    {
+      "namespace": "Java.Runtime.Native",
+      "name": "JNI_VERSION",
+      "autoPopulate": {
+        "filter": "JNI_VERSION_",
+        "header": "jni.h"
+      },
+      "uses": [
+        {
+          "struct": "JavaVMInitArgs",
+          "field": "version"
+        }
+      ]
+    },
+    {
+      "namespace": "Java.Window",
+      "name": "JAWT_LOCK",
+      "flags": true,
+      "autoPopulate": {
+        "filter": "JAWT_LOCK_",
+        "header": "jawt.h"
+      }
+    },
+    {
+      "namespace": "Java.Window",
+      "name": "JAWT_VERSION",
+      "autoPopulate": {
+        "filter": "JAWT_VERSION_",
+        "header": "jawt.h"
+      },
+      "uses": [
+        {
+          "struct": "jawt",
+          "field": "version"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+--traverse
+<IncludeRoot>/jni.h
+--namespace
+Java.Runtime.Native

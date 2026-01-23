@@ -1,0 +1,4 @@
+--traverse
+<IncludeRoot>/classfile_constants.h
+--namespace
+Java.Runtime

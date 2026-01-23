@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JNISharp" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.3.264" PrivateAssets="all">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectionMetadataWinmd Include="..\JavaNative.Win32Metadata\bin\*.winmd" />
+    <AppLocalAllowedLibraries Include="jvm" />
+    <ReferenceCopyLocalPaths Include="$(JAVA_HOME)\bin\server\jvm.dll" />
+  </ItemGroup>
+
+</Project>
