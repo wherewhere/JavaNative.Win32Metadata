@@ -30,6 +30,7 @@
     <None Include="@(Partition)" />
     <None Include="@(ResponseFile)" />
     <None Include="@(ManualCs)" />
+    <None Include="**/*.h" Exclude="bin/**/*;obj/**/*" />
     <None Include="**/*.txt" Exclude="bin/**/*;obj/**/*" />
     <None Include="**/*.json" Exclude="bin/**/*;obj/**/*" />
   </ItemGroup>

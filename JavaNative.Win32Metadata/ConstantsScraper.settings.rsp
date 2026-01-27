@@ -1,0 +1,3 @@
+--with-attribute
+JNI_FALSE=NativeTypeName("JBoolean")
+JNI_TRUE=NativeTypeName("JBoolean")

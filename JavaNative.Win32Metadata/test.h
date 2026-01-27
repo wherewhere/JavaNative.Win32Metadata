@@ -1,2 +1,0 @@
-#define _CRT_STDIO_ARBITRARY_WIDE_SPECIFIERS 1
-void Test();

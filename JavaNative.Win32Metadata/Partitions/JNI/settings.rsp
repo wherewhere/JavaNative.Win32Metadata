@@ -1,4 +1,5 @@
 --traverse
+<PartitionDir>/main.h
 <IncludeRoot>/jni.h
 --namespace
 Java.Runtime.Native
