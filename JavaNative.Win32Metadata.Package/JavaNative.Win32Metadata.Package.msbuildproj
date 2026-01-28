@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.Build.NoTargets" DefaultTargets="Pack">
+  <PropertyGroup>
+    <NoWarn>$(NoWarn);NU5100;NU5128</NoWarn>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageIcon>Icon.png</PackageIcon>
+    <PackageId>JavaNative.Win32Metadata</PackageId>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JavaNative.Win32Metadata\JavaNative.Win32Metadata.msbuildproj" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+
+  <ItemGroup Label="Package">
+    <None Include="..\logo.png" PackagePath="\Icon.png" Pack="true" />
+    <None Include="..\README.md" PackagePath="\README.md" Pack="true" />
+    <None Include="Properties\*.*" PackagePath="build\;buildTransitive\" Pack="true" />
+    <None Include="..\JavaNative.Win32Metadata\bin\*.winmd" PackagePath="\" Pack="true" />
+  </ItemGroup>
+</Project>

@@ -2,7 +2,6 @@
   <PropertyGroup>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <ImplicitUsings>enable</ImplicitUsings>
-    <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <OutputType>Exe</OutputType>
     <TargetFramework>net4.8.1</TargetFramework>
@@ -17,11 +16,5 @@
   <ItemGroup>
     <ProjectionMetadataWinmd Include="..\JavaNative.Win32Metadata\bin\*.winmd" />
     <AppLocalAllowedLibraries Include="jvm" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="$(JAVA_HOME)\**\*" CopyToOutputDirectory="PreserveNewest" Visible="false">
-      <LinkBase>jre</LinkBase>
-    </None>
   </ItemGroup>
 </Project>

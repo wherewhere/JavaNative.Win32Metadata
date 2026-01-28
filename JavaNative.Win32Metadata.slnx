@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="JavaNative.Win32Metadata.Package/JavaNative.Win32Metadata.Package.msbuildproj" Type="13b669be-bb05-4ddf-9536-439f39a36129" />
   <Project Path="JavaNative.Win32Metadata.Test/JavaNative.Win32Metadata.Test.csproj" />
   <Project Path="JavaNative.Win32Metadata/JavaNative.Win32Metadata.msbuildproj" Type="13b669be-bb05-4ddf-9536-439f39a36129" />
 </Solution>

@@ -1,8 +1,5 @@
 ﻿JNI_TRUE
 
-JavaVMInitArgs
-JNIEnv
-
 FindClass
 GetStaticMethodID
 CallStaticObjectMethodA

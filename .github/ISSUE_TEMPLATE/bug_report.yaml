@@ -31,12 +31,7 @@ body:
       label: NuGet package version
       description: Specify the version of JavaNative.Win32Metadata you're using.
       options:
-        - 0.1.6
-        - 0.0.5
-        - 0.0.4
-        - 0.0.3
-        - 0.0.2
-        - 0.0.1
+        - 25.0.1.0
   - type: dropdown
     attributes:
       label: Windows version
@@ -59,6 +54,18 @@ body:
         - Windows 10 version 1709 (16299, Fall Creators Update)
         - Windows 10 version 1709 (15254, Fall Creators Update)
         - Windows 10 version 1703 (15063, Creators Update)
+        - Windows 10 version 1607 (14393, Anniversary Update)
+        - Windows 10 version 1511 (10586, November Update)
+        - Windows 10 version 1507 (10240)
+        - Windows 8.1 (9600)
+        - Windows 8 (9200)
+        - Windows 7 SP1 (7601)
+        - Windows 7 (7600)
+        - Windows Vista SP2 (6002)
+        - Windows Vista SP1 (6001)
+        - Windows Vista (6000)
+        - Windows XP (2600)
+        - Windows 2000 (2195)
   - type: dropdown
     attributes:
       label: IDE
@@ -68,9 +75,6 @@ body:
         - Visual Studio Insiders
         - Visual Studio 2026
         - Visual Studio 2022
-        - Visual Studio 2019
-        - Visual Studio 2017
-        - Visual Studio 2015
         - Other
   - type: textarea
     attributes:

@@ -1,0 +1,6 @@
+<Project>
+  <ItemGroup>
+    <AppLocalAllowedLibraries Include="jvm" />
+    <ProjectionMetadataWinmd Include="$(MSBuildThisFileDirectory)..\JavaNative.winmd" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+{
+  "msbuild-sdks": {
+    "Microsoft.Build.NoTargets": "3.7.134",
+    "Microsoft.Windows.WinmdGenerator": "0.69.7-preview"
+  }
+}

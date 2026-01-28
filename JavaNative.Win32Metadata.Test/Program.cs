@@ -7,17 +7,17 @@ Console.WriteLine($"Host Process .NET Version: {Environment.Version}");
 
 unsafe
 {
-    using FreeLibrarySafeHandle __ = PInvoke.LoadLibrary("jre/bin/server/jvm.dll");
+    using FreeLibrarySafeHandle __ = PInvoke.LoadLibrary($"{Environment.GetEnvironmentVariable("JAVA_HOME")}/bin/server/jvm.dll");
     JavaVMInitArgs vm_args = new()
     {
-        version = JNI_VERSION.JNI_VERSION_21
+        version = JNI_VERSION.JNI_VERSION_24
     };
-    Java.PInvoke.JNI_GetDefaultJavaVMInitArgs(ref vm_args);
+    _ = Java.PInvoke.JNI_GetDefaultJavaVMInitArgs(ref vm_args);
     JNI_ERROR result = Java.PInvoke.JNI_CreateJavaVM(out JavaVM* jvm, out JNIEnv* env, vm_args);
 
     JNIEnv* list = stackalloc JNIEnv[1];
     InputJavaVMWithVersion GetEnv = jvm->functions->GetEnv.CreateDelegate<InputJavaVMWithVersion>();
-    GetEnv(jvm, list, JNI_VERSION.JNI_VERSION_21);
+    GetEnv(jvm, list, JNI_VERSION.JNI_VERSION_24);
 
     JavaVM** array = stackalloc JavaVM*[1];
     Java.PInvoke.JNI_GetCreatedJavaVMs(ref array[0], 1, out int length);

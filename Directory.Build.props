@@ -1,0 +1,17 @@
+<Project>
+
+  <PropertyGroup>
+    <Authors>wherewhere</Authors>
+    <LangVersion>latest</LangVersion>
+    <PackageIconUrl>https://raw.githubusercontent.com/wherewhere/JavaNative.Win32Metadata/main/logo.png</PackageIconUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/wherewhere/JavaNative.Win32Metadata</PackageProjectUrl>
+    <PackageReleaseNotes>https://github.com/wherewhere/JavaNative.Win32Metadata/releases</PackageReleaseNotes>
+    <PackageTags>Win32;Metadata;Java;Native;JNI</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/wherewhere/JavaNative.Win32Metadata</RepositoryUrl>
+    <VersionPrefix>25.0.1.0</VersionPrefix>
+    <Description>This packages provides the Win32 API surface of the Java Native Interface library as a winmd (Windows metadata) file. It is intended to be used as the basis for generating language-specific projections. It is not loadable as a CLR assembly.</Description>
+  </PropertyGroup>
+
+</Project>
