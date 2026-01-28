@@ -3,6 +3,14 @@
 JavaVMInitArgs
 JNIEnv
 
+FindClass
+GetStaticMethodID
+CallStaticObjectMethodA
+NewStringUTF
+GetStringUTFChars
+
+InputJavaVMWithVersion
+
 JNI_CreateJavaVM
 JNI_GetCreatedJavaVMs
 JNI_GetDefaultJavaVMInitArgs

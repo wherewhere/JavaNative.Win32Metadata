@@ -25,6 +25,20 @@
     },
     {
       "namespace": "Java.Runtime.Native",
+      "name": "JNI_RELEASE_MODE",
+      "members": [
+        {
+          "name": "JNI_DEFAULT",
+          "value": "0"
+        }
+      ],
+      "autoPopulate": {
+        "filter": "JNI_COMMIT|JNI_ABORT",
+        "header": "jni.h"
+      }
+    },
+    {
+      "namespace": "Java.Runtime.Native",
       "name": "JNI_VERSION",
       "autoPopulate": {
         "filter": "JNI_VERSION_",
