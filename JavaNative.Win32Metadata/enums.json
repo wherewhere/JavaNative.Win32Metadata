@@ -55,6 +55,12 @@
       "namespace": "Java.Window",
       "name": "JAWT_LOCK",
       "flags": true,
+      "members": [
+        {
+          "name": "JAWT_LOCK_OK",
+          "value": "0"
+        }
+      ],
       "autoPopulate": {
         "filter": "JAWT_LOCK_",
         "header": "jawt.h"

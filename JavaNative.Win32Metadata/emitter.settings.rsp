@@ -1,4 +1,30 @@
 --memberRemap
+JAWT_GetAWT::env=[In]
+JAWT_GetAWT::awt=[Out]
+
+JAWT_DrawingSurface::(?!env|target).*$=PROC
+JAWT::(?!version).*$=PROC
+JAWT::version=JAWT_VERSION
+
+LockDrawingSurface::ds=[In]
+LockDrawingSurface::return=JAWT_LOCK
+GetDrawingSurfaceInfo::ds=[In]
+FreeDrawingSurfaceInfo::dsi=[In]
+UnlockDrawingSurface::ds=[In]
+
+GetDrawingSurface::env=[In]
+FreeDrawingSurface::ds=[In]
+LockJNIEnv::env=[In]
+UnlockJNIEnv::env=[In]
+GetComponent::env=[In]
+GetComponent::platformInfo=[In]
+CreateEmbeddedFrame::env=[In]
+CreateEmbeddedFrame::platformInfo=[In]
+SetBounds::env=[In]
+SynthesizeWindowActivation::env=[In]
+
+jdwpTransportNativeInterface::(?!.*?reserved).*$=PROC
+
 JavaVMInitArgs::options=[NativeArrayInfo(CountFieldName="nOptions")]
 JNI_GetDefaultJavaVMInitArgs::args=JavaVMInitArgs*
 JNI_CreateJavaVM::pvm=[Out]
@@ -400,3 +426,5 @@ InputJavaVMWithVersion::version=JNI_VERSION
 
 JNINativeInterface::(?!.*?reserved).*$=PROC
 JNIInvokeInterface::(?!.*?reserved).*$=PROC
+
+jvmtiInterface_1::(?!.*?reserved).*$=PROC

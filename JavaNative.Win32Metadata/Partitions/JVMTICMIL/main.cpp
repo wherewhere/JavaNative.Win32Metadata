@@ -1,1 +1,2 @@
-//#include "jvmticmlr.h"
+#include "jni.h"
+#include "jvmticmlr.h"

@@ -1,4 +1,11 @@
 --remap
+jawt_Rectangle=JAWT_Rectangle
+jawt_DrawingSurfaceInfo=JAWT_DrawingSurfaceInfo
+jawt_DrawingSurface=JAWT_DrawingSurface
+jawt=JAWT
+
+jawt_Win32DrawingSurfaceInfo=JAWT_Win32DrawingSurfaceInfo
+
 jdwpTransportNativeInterface_=jdwpTransportNativeInterface
 _jdwpTransportEnv=jdwpTransportEnv
 
@@ -24,9 +31,19 @@ jfloatArray=JFloatArray
 jdoubleArray=JDoubleArray
 jobjectArray=JObjectArray
 jweak=JWeak
+jthread=JThread
+jthreadGroup=JThreadGroup
+jlocation=JLocation
 jfieldID=JFieldID
 jmethodID=JMethodID
+jrawMonitorID=JRawMonitorID
 jvalue=JValue
 _jobjectType=JObjectType
 
-_jvmtiEnv = jvmtiEnv
+jvmtiInterface_1_=jvmtiInterface_1
+_jvmtiEnv=jvmtiEnv
+
+_jvmtiCompiledMethodLoadRecordHeader=jvmtiCompiledMethodLoadRecordHeader
+_PCStackInfo=PCStackInfo
+_jvmtiCompiledMethodLoadInlineRecord=jvmtiCompiledMethodLoadInlineRecord
+_jvmtiCompiledMethodLoadDummyRecord=jvmtiCompiledMethodLoadDummyRecord

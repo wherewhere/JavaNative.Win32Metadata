@@ -1,4 +1,6 @@
 --traverse
 <IncludeRoot>/jawt.h
+<IncludeRoot>/win32/jawt_md.h
+<PartitionDir>/main.h
 --namespace
 Java.Window

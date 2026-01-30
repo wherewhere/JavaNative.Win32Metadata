@@ -1,4 +1,4 @@
 --traverse
 <IncludeRoot>/jvmticmlr.h
 --namespace
-Java.Runtime.Tool.CompiledMethodLoad
+Java.Runtime.Tool.Data
