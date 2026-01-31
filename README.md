@@ -6,6 +6,13 @@ This project contains code to build and publish the [JavaNative.Win32Metadata](h
 [![NuGet](https://img.shields.io/nuget/dt/JavaNative.Win32Metadata.svg?logo=NuGet&style=flat-square)](https://www.nuget.org/packages/JavaNative.Win32Metadata "NuGet")
 
 ## How to use it
+> [!WARNING]  
+> JVM is not supports CET, so make sure `CetCompat` is `false` in your project settings if you are using .NET 9 or later.
+> ```xml
+> <CetCompat>false</CetCompat>
+> ```
+> See [Breaking Change in .NET 9 Crashes Ignite Node](https://ptupitsyn.github.io/Ignite-on-NET-9).
+
 1. Install the required Nuget packages:
    - [Microsoft.Windows.CsWin32](https://www.nuget.org/packages/Microsoft.Windows.CsWin32)
    - [JavaNative.Win32Metadata](https://www.nuget.org/packages/JavaNative.Win32Metadata)
