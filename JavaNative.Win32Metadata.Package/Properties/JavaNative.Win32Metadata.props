@@ -1,6 +1,7 @@
 <Project>
   <ItemGroup>
     <AppLocalAllowedLibraries Include="jvm" />
+    <ProjectionDocs Include="$(MSBuildThisFileDirectory)..\apidocs.msgpack" />
     <ProjectionMetadataWinmd Include="$(MSBuildThisFileDirectory)..\JavaNative.winmd" />
   </ItemGroup>
 </Project>

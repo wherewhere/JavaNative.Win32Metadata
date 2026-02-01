@@ -19,5 +19,6 @@
     <None Include="..\README.md" PackagePath="\README.md" Pack="true" />
     <None Include="Properties\*.*" PackagePath="build\;buildTransitive\" Pack="true" />
     <None Include="..\JavaNative.Win32Metadata\bin\*.winmd" PackagePath="\" Pack="true" />
+    <None Include="..\JavaNative.Win32Metadata\bin\*.msgpack" PackagePath="\" Pack="true" />
   </ItemGroup>
 </Project>

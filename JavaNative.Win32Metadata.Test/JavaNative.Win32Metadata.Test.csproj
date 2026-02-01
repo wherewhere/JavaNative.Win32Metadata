@@ -15,7 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectionMetadataWinmd Include="..\JavaNative.Win32Metadata\bin\*.winmd" />
     <AppLocalAllowedLibraries Include="jvm" />
+    <ProjectionDocs Include="..\JavaNative.Win32Metadata\bin\*.msgpack" />
+    <ProjectionMetadataWinmd Include="..\JavaNative.Win32Metadata\bin\*.winmd" />
   </ItemGroup>
 </Project>
