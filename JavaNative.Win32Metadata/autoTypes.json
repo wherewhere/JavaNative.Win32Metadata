@@ -1,31 +1,31 @@
 [
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JBoolean",
     "ValueType": "byte",
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JByte",
     "ValueType": "sbyte",
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JChar",
     "ValueType": "ushort",
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JObject",
     "ValueType": "void*",
     "InvalidHandleValues": [ 0 ],
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JClass",
     "ValueType": "void*",
     "AlsoUsableFor": "JObject",
@@ -33,7 +33,7 @@
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JThrowable",
     "ValueType": "void*",
     "AlsoUsableFor": "JObject",
@@ -41,7 +41,7 @@
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JString",
     "ValueType": "void*",
     "AlsoUsableFor": "JObject",
@@ -49,7 +49,7 @@
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JArray",
     "ValueType": "void*",
     "AlsoUsableFor": "JObject",
@@ -57,7 +57,7 @@
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JBooleanArray",
     "ValueType": "void*",
     "AlsoUsableFor": "JArray",
@@ -65,7 +65,7 @@
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JByteArray",
     "ValueType": "void*",
     "AlsoUsableFor": "JArray",
@@ -73,7 +73,7 @@
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JCharArray",
     "ValueType": "void*",
     "AlsoUsableFor": "JArray",
@@ -81,7 +81,7 @@
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JShortArray",
     "ValueType": "void*",
     "AlsoUsableFor": "JArray",
@@ -89,7 +89,7 @@
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JIntArray",
     "ValueType": "void*",
     "AlsoUsableFor": "JArray",
@@ -97,7 +97,7 @@
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JLongArray",
     "ValueType": "void*",
     "AlsoUsableFor": "JArray",
@@ -105,7 +105,7 @@
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JFloatArray",
     "ValueType": "void*",
     "AlsoUsableFor": "JArray",
@@ -113,7 +113,7 @@
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JDoubleArray",
     "ValueType": "void*",
     "AlsoUsableFor": "JArray",
@@ -121,7 +121,7 @@
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JObjectArray",
     "ValueType": "void*",
     "AlsoUsableFor": "JArray",
@@ -129,7 +129,7 @@
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JWeak",
     "ValueType": "void*",
     "AlsoUsableFor": "JObject",
@@ -137,7 +137,7 @@
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JThread",
     "ValueType": "void*",
     "AlsoUsableFor": "JObject",
@@ -145,7 +145,7 @@
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JThreadGroup",
     "ValueType": "void*",
     "AlsoUsableFor": "JObject",
@@ -153,7 +153,7 @@
     "NativeTypedef": true
   },
   {
-    "Namespace": "Java",
+    "Namespace": "Java.Runtime",
     "Name": "JLocation",
     "ValueType": "long",
     "NativeTypedef": true

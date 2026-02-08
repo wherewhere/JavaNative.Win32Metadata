@@ -31,6 +31,7 @@ body:
       label: NuGet package version
       description: Specify the version of JavaNative.Win32Metadata you're using.
       options:
+        - 25.0.2.0
         - 25.0.1.0
   - type: dropdown
     attributes:

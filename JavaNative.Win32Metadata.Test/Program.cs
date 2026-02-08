@@ -1,4 +1,5 @@
-﻿using Java.Runtime.Native;
+﻿using Java.Runtime;
+using Java.Runtime.Native;
 using System.Runtime.InteropServices;
 using Windows.Win32;
 using Windows.Win32.Foundation;
@@ -22,7 +23,7 @@ unsafe
     JavaVM** array = stackalloc JavaVM*[1];
     Java.PInvoke.JNI_GetCreatedJavaVMs(ref array[0], 1, out int length);
 
-    Java.JClass system = env->functions->FindClass.CreateDelegate<FindClass>()(env, new PCSTR((byte*)Marshal.StringToHGlobalAnsi("java/lang/System")));
+    JClass system = env->functions->FindClass.CreateDelegate<FindClass>()(env, new PCSTR((byte*)Marshal.StringToHGlobalAnsi("java/lang/System")));
     if (!system.IsNull)
     {
         JMethodID getProperty = env->functions->GetStaticMethodID.CreateDelegate<GetStaticMethodID>()(env, system, new PCSTR((byte*)Marshal.StringToHGlobalAnsi("getProperty")), new PCSTR((byte*)Marshal.StringToHGlobalAnsi("(Ljava/lang/String;)Ljava/lang/String;")));
@@ -30,10 +31,10 @@ unsafe
         {
             JValue* _args = stackalloc JValue[1];
             _args[0] = new JValue() { l = env->functions->NewStringUTF.CreateDelegate<NewStringUTF>()(env, new PCSTR((byte*)Marshal.StringToHGlobalAnsi("java.version"))) };
-            Java.JObject version = env->functions->CallStaticObjectMethodA.CreateDelegate<CallStaticObjectMethodA>()(env, system, getProperty, _args);
+            JObject version = env->functions->CallStaticObjectMethodA.CreateDelegate<CallStaticObjectMethodA>()(env, system, getProperty, _args);
             if (!version.IsNull)
             {
-                PCSTR str = env->functions->GetStringUTFChars.CreateDelegate<GetStringUTFChars>()(env, new Java.JString(version.Value), null);
+                PCSTR str = env->functions->GetStringUTFChars.CreateDelegate<GetStringUTFChars>()(env, new JString(version.Value), null);
                 Console.WriteLine($"Java Version: {str}");
             }
         }
